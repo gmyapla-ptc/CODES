@@ -6,7 +6,7 @@
 5. Ensure your conditions are ordered correctly so higher scores receive the appropriate classification. */
 
 
-class Grade_Decision_System {
+class GradeDecisionSystem {
 
     public static void main (String[]args) {
 
