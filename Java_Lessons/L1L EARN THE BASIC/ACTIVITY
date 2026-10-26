@@ -1,0 +1,153 @@
+class Main {
+    public static void main(String[] args) {
+        String name = "Ana";
+        int age = 20;
+        double height = 1.65;
+        
+// TASK 1
+
+/* CREATE AN OUTPUT OF
+Name: Ana
+Age: 20
+Height: 1.65 mName: Ana
+Age: 20
+Height: 1.65 
+*/
+        System.out.println("TASK 1 ");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+
+
+ System.out.println();
+
+//TASK 2
+/* 
+int x = 17;
+int y = 5;
+
+Print:
+
+x + y, x - y, x * y
+x / y
+x % y
+The real answer of 17 ÷ 5 with decimals (hint: cast one of them to double)
+
+Before running, write down what you expect for #2 and #4. Then check whether you were right. 
+
+*/
+        /* Expectation 
+        1. 22, 12, 85
+        2. 3 (decimal dropped)
+        3. remaider 
+        */
+        int x = 17;
+        int y = 5;
+
+        System.out.println("TASK 2 ");
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
+        System.out.println(x / y);
+        
+        double result1 = (double)x / y; 
+        System.out.println(result1);
+
+ System.out.println();
+        System.out.println("TASK 23");
+        double celsius = 36.5;
+        double fahrenheit = (celsius * 9.0 / 5.0) + 32.0; 
+
+        System.out.println(fahrenheit);       
+        System.out.println((int)fahrenheit);  
+
+//TASK 3
+/* 
+double celsius = 36.6;
+
+Print the Fahrenheit value.
+Cast the result to int and print it. Notice what happens to the decimals.
+
+Bonus: try int c = 36; and use c * 9 / 5 + 32. Then try c * (9 / 5) + 32. Why do the two give different answers? (Think about integer division.)
+
+*/
+
+/*Task 4: Scope and constants
+
+Write this and predict whether it compiles. Then run it:
+
+java
+public class Main {
+    public static void main(String[] args) {
+        final double TAX_RATE = 0.12;
+        double price = 500;
+
+        if (price > 100) {
+            double discount = 50;
+            System.out.println("Discount: " + discount);
+        }
+
+        System.out.println("Discount again: " + discount);
+        TAX_RATE = 0.15;
+    }
+}
+Read the compiler errors. There should be two. Which lines cause them, and why?
+Fix both errors so the program runs. For the second one, think about what final means. 
+
+*/
+
+        /*4 public class Main {
+    public static void main(String[] args) {
+        final double TAX_RATE = 0.12;
+        double price = 500;
+
+        if (price > 100) {
+            double discount = 50;
+            System.out.println("Discount: " + discount);
+        }
+
+        System.out.println("Discount again: " + discount);
+        TAX_RATE = 0.15;
+    }
+}
+
+
+IT WILL NOT RUN 
+first there is no discount variable
+2nd FINAL cannot be change the value
+
+TASK 5 
+ String a = new String("java");
+String b = new String("java");
+
+System.out.println(a == b);
+System.out.println(a.equals(b));
+
+
+== 
+checks like different address, mostly works in primitive types or numbers , WITH " " is STRING type so the adress of it belongs to a, no matter how similar it is to b, they have 2 different addre[...]
+
+.equals is made entirely for STRINGS, it checks the contents of "" of a and compare it to " " of b
+
+*/
+        System.out.println();
+ System.out.println("TASK 6 ");
+        
+        double subtotal = 850.50;
+
+        final double TAX_RATE = 0.12;
+        
+      
+        double tax = subtotal * TAX_RATE;
+        double total = subtotal + tax;
+        
+   
+        System.out.println("Subtotal:  " + subtotal);
+        System.out.println("Tax (12%): " + tax);
+        System.out.println("Total:     " + total);
+        
+       
+        int roundedTotal = (int) total;
+        System.out.println("Rounded Total: " + roundedTotal);
+    }
+}
